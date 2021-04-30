@@ -1,0 +1,91 @@
+$backgroundColor: #fbb03b
+$mainColor: #117f73
+$buttonColor: #39b69f
+
+body
+  background: $backgroundColor
+  height: 100vh
+
+.hamburger-container
+  height: 6rem
+  width: 6rem
+  background: $mainColor
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  gap: 7px
+  border-radius: 50%
+  position: absolute
+  top: 25px
+  right: 25px
+  div
+    background: #fff
+    width: 50px
+    height: 8px
+
+h1
+  color: $mainColor
+  font-family: 'Times New Roman', Times, serif
+  font-weight: bold
+
+main
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  gap: 20px
+  .checkbox-container
+    display: flex
+    margin: 0 2rem
+    input
+      margin-bottom: 15px
+      margin-right: 14px
+      transform: scale(1.3)
+    p
+      color: $mainColor
+      font-weight: 600
+      font-size: 1.1rem
+  input
+    font-size: 1.1rem
+    padding: 1.3rem 20rem 1.3rem 1.5rem
+    font-weight: 600
+    color: $mainColor
+  .btn-info
+    margin-top: 1.6rem
+    background: $buttonColor
+    color: #fff
+    border: solid 1px #fff
+    border-radius: 0
+    padding: 1.5rem 6.5rem
+    text-transform: uppercase
+    letter-spacing: 2px
+    &:hover
+      color: #fff
+
+@media (max-width: 768px)
+  *
+    font-size: 14px
+
+  .hamburger-container
+    width: 5rem
+    height: 5rem
+    gap: 6px
+    top: 15px
+    right: 15px
+    div
+      width: 35px
+      height: 5px
+
+  h1
+    align-self: flex-end
+    margin-right: 2rem
+
+  main
+    gap: 15px
+    input
+      padding: 1rem 6rem 1rem 1.3rem
+    .btn-info
+      margin-top: 0
+      padding: 1.7rem 6.5rem

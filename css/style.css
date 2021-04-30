@@ -1,0 +1,108 @@
+body {
+  background: #fbb03b;
+  height: 100vh;
+}
+
+.hamburger-container {
+  height: 6rem;
+  width: 6rem;
+  background: #117f73;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+.hamburger-container div {
+  background: #fff;
+  width: 50px;
+  height: 8px;
+}
+
+h1 {
+  color: #117f73;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+main .checkbox-container {
+  display: flex;
+  margin: 0 2rem;
+}
+main .checkbox-container input {
+  margin-bottom: 15px;
+  margin-right: 14px;
+  transform: scale(1.3);
+}
+main .checkbox-container p {
+  color: #117f73;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+main input {
+  font-size: 1.1rem;
+  padding: 1.3rem 20rem 1.3rem 1.5rem;
+  font-weight: 600;
+  color: #117f73;
+}
+main .btn-info {
+  margin-top: 1.6rem;
+  background: #39b69f;
+  color: #fff;
+  border: solid 1px #fff;
+  border-radius: 0;
+  padding: 1.5rem 6.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+main .btn-info:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  * {
+    font-size: 14px;
+  }
+
+  .hamburger-container {
+    width: 5rem;
+    height: 5rem;
+    gap: 6px;
+    top: 15px;
+    right: 15px;
+  }
+  .hamburger-container div {
+    width: 35px;
+    height: 5px;
+  }
+
+  h1 {
+    align-self: flex-end;
+    margin-right: 2rem;
+  }
+
+  main {
+    gap: 15px;
+  }
+  main input {
+    padding: 1rem 6rem 1rem 1.3rem;
+  }
+  main .btn-info {
+    margin-top: 0;
+    padding: 1.7rem 6.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
